@@ -1,0 +1,26 @@
+<div>
+
+    <div class = " wcol-3 bg-success">
+        <h4>{{coursename}}</h4>
+        <h2>{{inputType}}</h2>
+    </div>
+    <div class="col-4">
+        property Binding
+    <div [class]="coursename">Danger</div>
+    <input [type]=" coursename"/>
+
+</div>
+
+<button class="col-4" (click)="showAlert('welcome Angular JS')">show welcome</button>
+<button class="col-4" (click)="changeCourseName()">change course</button>
+<div class="col-4"><input type="text"[(ngModel)]= "coursename"/>-{{coursename}}
+
+    </div>
+    <select [(ngModel)]="state">
+        <option value="" >select</option>
+        <option value="GOA" >GOA</option>
+        <option value="Maharasthra" >maharashtra</option>
+        <option value="up" >up</option>
+    </select>
+</div>
+
